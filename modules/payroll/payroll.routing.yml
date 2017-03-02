@@ -1,0 +1,30 @@
+payroll_list:
+  path: '/payroll/payroll'
+  defaults:
+    _controller: '\Drupal\payroll\Controller\AdminController::content'
+  requirements:
+    _permission: 'manage payroll forms'
+
+payroll_add:
+  path: '/payroll/add'
+  defaults:
+    _form: '\Drupal\payroll\AddForm'
+    _title: 'Create payroll'
+  requirements:
+    _permission: 'use payroll form'
+
+payroll_edit:
+  path: '/payroll/edit/{id}'
+  defaults:
+    _form: '\Drupal\payroll\AddForm'
+    _title: 'Edit payroll'
+  requirements:
+    _permission: 'use payroll form'
+
+payroll_delete:
+  path: '/payroll/delete/{id}'
+  defaults:
+    _form: 'Drupal\payroll\DeleteForm'
+    _title: 'Delete payroll'
+  requirements:
+    _permission: 'manage payroll forms'

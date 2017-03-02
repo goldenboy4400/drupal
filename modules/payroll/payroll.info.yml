@@ -1,0 +1,5 @@
+name: Payroll Form
+description: 'Payroll Form.'
+type: module
+core: 8.x
+package: Payroll Custom Form

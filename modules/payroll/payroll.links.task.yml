@@ -1,0 +1,3 @@
+payroll_list:
+  title: Payroll
+  route_name: payroll_list

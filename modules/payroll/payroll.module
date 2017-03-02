@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Implements hook_menu()
+ */
+function payroll_array() {
+    return array(
+        '/payroll/payroll' => array(
+            'title' => 'Payroll submissions',
+            'route_name' => 'payroll_list',
+        ),
+        '/payroll/add' => array(
+            'title' => 'Payroll form',
+            'route_name' => 'payroll_add',
+        ),
+        '/payroll/delete/%' => array(
+            'title' => 'Payroll submission',
+            'route_name' => 'payroll_delete',
+        ),
+    );
+}
+
